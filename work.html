@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+  <script>
+      
+  jQuery('body').css('display', 'none');
+  jQuery(document).ready(function(){
+
+        jQuery('body').fadeIn();
+        jQuery('a').on('click',function(event){
+            var thetarget = this.getAttribute('target')
+            if(thetarget != "_blank"){
+                var thehref = this.getAttribute('href')
+                event.preventDefault();
+                jQuery('body').fadeOut(function(){
+                    window.location = thehref
+                });
+            }
+        });
+
+  });
+
+  setTimeout(function(){
+    jQuery('body').fadeIn()
+  },1000)
+
+  </script>
+
+    <style>
+        
+        body{
+            background-color:#DFE0E2;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .images{
+          margin-top: 10vh;
+          width: 720px;
+          height: 348px;
+        }
+
+        #top-left{
+           padding-right: 200px;
+        }
+
+        #top-right{
+           padding-left: 200px;
+        }
+
+        #bottom-left{
+          padding-right: 200px;
+        }
+
+        #bottom-right{
+          padding-left: 200px;
+        }
+
+        .padded img:hover {
+          transform: scale(1.2,1.2);
+          cursor: pointer;
+        }
+
+        #back{
+          padding-left: 50px;
+          padding-top: 25px;
+        }
+
+        a {
+            color: #384343;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .mod h1{
+          text-align: center;
+        }
+
+        .mod{
+           color: #384343;
+        }
+
+        .modal-footer-name{
+          float: left;
+        }
+
+        .modalButton{
+          background-color:#555B6E;
+          color:#DFE0E2;
+        }
+
+        .modal-content{
+          background-color:#DFE0E2;
+        }
+    </style>
+
+    <div id="back">
+      <a href='index.html'>N.R</a>
+    </div>
+
+    <div class="container">
+      <div class='row'>
+        <div class="col-md-6">
+          <div class='padded'>
+             <img src="example1.png" class='images' id="top-left" type='button' data-toggle='modal' data-target='#modal1'>
+          </div>
+
+          <div class='modal fade mod' id='modal1'>
+            <div class='modal-dialog'>
+              <div class='modal-content'>
+                <div class='modal-header'>
+                  <h1>Work 1</h1>
+                </div>
+                        <div class='modal-body'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum ex ante, at auctor augue sagittis et. Proin quis ultricies dolor. Sed et ligula magna. Suspendisse tristique commodo vulputate. Praesent feugiat dolor at lectus commodo mollis. Curabitur quis faucibus lectus. Vivamus quis felis tellus. Nulla quis lectus eu neque lacinia porta sed non leo. Donec commodo lorem lorem, vitae consequat turpis aliquam ut. Maecenas congue pretium tellus. Donec eu blandit dui, sed interdum magna. Aenean dictum non libero sed dictum. Aenean blandit ultricies ex in semper. Vestibulum semper, risus eu auctor sollicitudin, neque augue pretium justo, sed dignissim lectus justo sed leo. Nullam ac lacus leo. Donec porta, urna eget fringilla cursus, leo ipsum auctor quam, eget elementum mi nibh at risus.
+
+                    Quisque luctus hendrerit lorem eu sodales. Donec hendrerit dolor non tellus imperdiet, quis aliquam elit lacinia. Morbi efficitur nisi eu velit aliquam, eget egestas ligula aliquam. Ut sollicitudin, urna fermentum consequat imperdiet, dui diam porttitor velit, eget auctor massa orci vel metus. Nulla consectetur laoreet vestibulum. Aliquam condimentum sagittis tempus. Nulla vestibulum augue quis neque dignissim feugiat quis at sapien. Pellentesque tincidunt tempus porta. Ut fringilla enim a feugiat faucibus. Suspendisse faucibus semper diam, non blandit justo aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac consequat arcu, non maximus ipsum. Donec tempus dolor sed pulvinar volutpat. Proin finibus a diam sed eleifend.
+                  </p>
+                </div>
+                <div class='modal-footer'>
+                  <h4 class='modal-footer-name'>Nida Rafiq</h4>
+                  <button type='button' class='btn modalButton' data-dismiss='modal'>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+             <div class='padded'>
+             <img src="example1.png" class='images' id="top-left" type='button' data-toggle='modal' data-target='#modal2'>
+          </div>
+
+          <div class='modal fade mod' id='modal2'>
+            <div class='modal-dialog'>
+              <div class='modal-content'>
+                <div class='modal-header'>
+                  <h1>Work 2</h1>
+                </div>
+                <div class='modal-body'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum ex ante, at auctor augue sagittis et. Proin quis ultricies dolor. Sed et ligula magna. Suspendisse tristique commodo vulputate. Praesent feugiat dolor at lectus commodo mollis. Curabitur quis faucibus lectus. Vivamus quis felis tellus. Nulla quis lectus eu neque lacinia porta sed non leo. Donec commodo lorem lorem, vitae consequat turpis aliquam ut. Maecenas congue pretium tellus. Donec eu blandit dui, sed interdum magna. Aenean dictum non libero sed dictum. Aenean blandit ultricies ex in semper. Vestibulum semper, risus eu auctor sollicitudin, neque augue pretium justo, sed dignissim lectus justo sed leo. Nullam ac lacus leo. Donec porta, urna eget fringilla cursus, leo ipsum auctor quam, eget elementum mi nibh at risus.
+
+                    Quisque luctus hendrerit lorem eu sodales. Donec hendrerit dolor non tellus imperdiet, quis aliquam elit lacinia. Morbi efficitur nisi eu velit aliquam, eget egestas ligula aliquam. Ut sollicitudin, urna fermentum consequat imperdiet, dui diam porttitor velit, eget auctor massa orci vel metus. Nulla consectetur laoreet vestibulum. Aliquam condimentum sagittis tempus. Nulla vestibulum augue quis neque dignissim feugiat quis at sapien. Pellentesque tincidunt tempus porta. Ut fringilla enim a feugiat faucibus. Suspendisse faucibus semper diam, non blandit justo aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac consequat arcu, non maximus ipsum. Donec tempus dolor sed pulvinar volutpat. Proin finibus a diam sed eleifend.
+                  </p>
+                </div>
+                <div class='modal-footer'>
+                  <h4 class='modal-footer-name'>Nida Rafiq</h4>
+                  <button type='button' class='btn modalButton' data-dismiss='modal'>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-md-6">
+             <div class='padded'>
+             <img src="example1.png" class='images' id="top-left" type='button' data-toggle='modal' data-target='#modal3'>
+          </div>
+
+          <div class='modal fade mod' id='modal3'>
+            <div class='modal-dialog'>
+              <div class='modal-content'>
+                <div class='modal-header'>
+                  <h1>Work 3</h1>
+                </div>
+                        <div class='modal-body'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum ex ante, at auctor augue sagittis et. Proin quis ultricies dolor. Sed et ligula magna. Suspendisse tristique commodo vulputate. Praesent feugiat dolor at lectus commodo mollis. Curabitur quis faucibus lectus. Vivamus quis felis tellus. Nulla quis lectus eu neque lacinia porta sed non leo. Donec commodo lorem lorem, vitae consequat turpis aliquam ut. Maecenas congue pretium tellus. Donec eu blandit dui, sed interdum magna. Aenean dictum non libero sed dictum. Aenean blandit ultricies ex in semper. Vestibulum semper, risus eu auctor sollicitudin, neque augue pretium justo, sed dignissim lectus justo sed leo. Nullam ac lacus leo. Donec porta, urna eget fringilla cursus, leo ipsum auctor quam, eget elementum mi nibh at risus.
+
+                    Quisque luctus hendrerit lorem eu sodales. Donec hendrerit dolor non tellus imperdiet, quis aliquam elit lacinia. Morbi efficitur nisi eu velit aliquam, eget egestas ligula aliquam. Ut sollicitudin, urna fermentum consequat imperdiet, dui diam porttitor velit, eget auctor massa orci vel metus. Nulla consectetur laoreet vestibulum. Aliquam condimentum sagittis tempus. Nulla vestibulum augue quis neque dignissim feugiat quis at sapien. Pellentesque tincidunt tempus porta. Ut fringilla enim a feugiat faucibus. Suspendisse faucibus semper diam, non blandit justo aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac consequat arcu, non maximus ipsum. Donec tempus dolor sed pulvinar volutpat. Proin finibus a diam sed eleifend.
+                  </p>
+                </div>
+                <div class='modal-footer'>
+                  <h4 class='modal-footer-name'>Nida Rafiq</h4>
+                  <button type='button' class='btn modalButton' data-dismiss='modal'>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+             <div class='padded'>
+             <img src="example1.png" class='images' id="top-left" type='button' data-toggle='modal' data-target='#modal4'>
+          </div>
+
+          <div class='modal fade mod' id='modal4'>
+            <div class='modal-dialog'>
+              <div class='modal-content'>
+                <div class='modal-header'>
+                  <h1>Work 4</h1>
+                </div>
+                   <div class='modal-body'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum ex ante, at auctor augue sagittis et. Proin quis ultricies dolor. Sed et ligula magna. Suspendisse tristique commodo vulputate. Praesent feugiat dolor at lectus commodo mollis. Curabitur quis faucibus lectus. Vivamus quis felis tellus. Nulla quis lectus eu neque lacinia porta sed non leo. Donec commodo lorem lorem, vitae consequat turpis aliquam ut. Maecenas congue pretium tellus. Donec eu blandit dui, sed interdum magna. Aenean dictum non libero sed dictum. Aenean blandit ultricies ex in semper. Vestibulum semper, risus eu auctor sollicitudin, neque augue pretium justo, sed dignissim lectus justo sed leo. Nullam ac lacus leo. Donec porta, urna eget fringilla cursus, leo ipsum auctor quam, eget elementum mi nibh at risus.
+
+                    Quisque luctus hendrerit lorem eu sodales. Donec hendrerit dolor non tellus imperdiet, quis aliquam elit lacinia. Morbi efficitur nisi eu velit aliquam, eget egestas ligula aliquam. Ut sollicitudin, urna fermentum consequat imperdiet, dui diam porttitor velit, eget auctor massa orci vel metus. Nulla consectetur laoreet vestibulum. Aliquam condimentum sagittis tempus. Nulla vestibulum augue quis neque dignissim feugiat quis at sapien. Pellentesque tincidunt tempus porta. Ut fringilla enim a feugiat faucibus. Suspendisse faucibus semper diam, non blandit justo aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ac consequat arcu, non maximus ipsum. Donec tempus dolor sed pulvinar volutpat. Proin finibus a diam sed eleifend.
+                  </p>
+                </div>
+                <div class='modal-footer'>
+                  <h4 class='modal-footer-name'>Nida Rafiq</h4>
+                  <button type='button' class='btn modalButton' data-dismiss='modal'>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+</html>
